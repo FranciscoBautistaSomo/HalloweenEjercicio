@@ -1,0 +1,107 @@
+/*************** stylesheet for Halloween *****************/
+/*ATENCION: ESTA PAGINA NO VA A SER RESPONSIVE*/
+
+@font-face {
+    font-family: halloween;
+    src: url("../fonts/NightscaryFreeTrial.ttf");
+}
+
+
+body {background-color:black;
+        color: blanchedalmond;
+    font-family: halloween;}
+/*NO ES RESPONSIVE, PORQUE NECESITO EL ESCENARIO ENTERO, ASI
+QUE DIMENSIONO EL CONTAINER CON PIXELES*/
+#container{
+    background-image: url("../images/background.jpg");
+    width: 1920px; /* fijo el ancho como la imagen*/
+    height: 1060px; /*fijo el alto al de la imagen*/
+    margin: auto; /*centrar imagen*/
+    position: relative; /*el container se mueve por la pantalla*/
+}
+
+#p1 {font-size: 3em;
+    text-shadow: 5px 5px 5px red;
+    position: absolute; /*el #p1 estará fijo al #container*/
+    top: 20px;
+    left: 200px;
+}
+
+#p2  {
+    text-shadow : 5px 5px 5px red;
+    font-size: 2.5em;
+    position: absolute;
+    top: 190px;
+    left:1060px;
+}
+
+#p3 {
+    text-shadow: 5px 5px 5px red;
+    font-size: 2.5em;
+    position: absolute;
+    top: 570px;
+    left: 920px;
+}
+
+#p4 {
+    text-shadow: 5px 5px 5px red;
+    font-size: 2.5em;
+    position: absolute;
+    top: 570px;
+    left: 1300px;
+}
+
+
+
+#carota{
+    position: absolute;
+    top : 270px;
+    left : 1000px;
+    width: 400px;
+    visibility: hidden;
+}
+
+#ventana {
+    width: 50px;
+    height: 80px;
+    /*border: 1px solid white; /* para quitar luego*/
+    position: absolute;
+    top:320px;
+    left: 1120px;
+}
+
+#puerta {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 700px;
+    left: 950px;
+    visibility : hidden;
+}
+
+#cierrapuerta {
+    width : 80px;
+    height : 120px;
+    /*border: 1px solid white; /* para quitar luego*/
+    position : absolute;
+    top : 750px;
+    left : 970px;
+}
+
+#zombieArboles {
+    width: 80px;
+    height: 120px;
+    /*border: 1px solid white; /* para quitar luego*/
+    position: absolute;
+    top: 700px;
+    left: 1600px;
+}
+
+#zombie {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 650px;
+    left: 1500px;
+    visibility: hidden;
+}

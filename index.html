@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Hallowen Party</title>
+    <link rel="stylesheet" href="./styles/hallowen.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="favicon.ico">
+    <script src="./javascript/hallowen.js"></script>
+</head>
+<body onload="sonar('music')">
+    <!--el sonido lo saco fuera del container porque no se va a
+    tener nada visible (controles)-->
+    <audio id="laugh" >
+            <source src="./sound/Evil_Laugh_1-Timothy-64737261.mp3" type="audio/mp3">
+
+    </audio>
+
+    <audio id="music" >
+            <source src="./sound/horror-nightmare.mp3" type="audio/mp3">
+            
+    </audio>
+    <audio id="puertaSonido" >
+            <source src="./sound/Sqeaking_door-Sarasprella-1653672487.mp3" type="audio/mp3">
+            
+    </audio>
+    <audio id="zombieHabla" >
+            <source src="./sound/Halloween_Vocals-Mike_Koenig-517765553.mp3" type="audio/mp3">
+            
+    </audio>
+    <!-- El layout basico incluye un container -->
+    <!-- ATENCION: ESTA PAGINA NO VA A SER RESPONSIVE PORQUE NECESITO
+    QUE SE VEA -->
+
+    <div id="container">
+        <p id="p1">Scary Halloween Party</p><!--TITULO-->
+        <!--PRIMER EFECTO VENTANA DE LA BUHARDILLA-->
+        <p id="p2">Who is in the loft??</p>
+        <p id="p3">Close the door</p>
+        <p id="p4">Something is watching you in the darkness</p>
+        <img id="carota" src="images/ZF6O.gif">
+        <!--creo un div vacio para definir el rectangulo sensible-->
+        <div id="ventana" onmousemove="mostrar('carota');sonar('laugh')"
+                           onmouseout="ocultar('carota');parar('laugh')"></div>
+        <img id="puerta" src="images/8PZD.gif">
+        <div id="cierrapuerta" onmousemove="mostrar('puerta');sonar('puertaSonido')"
+                               onmouseout="ocultar('puerta');parar('puertaSonido')"></div>
+        <img id="zombie" src="images/4hsd.gif">
+        <div id="zombieArboles" onmousemove="mostrar('zombie');sonar('zombieHabla')"
+                               onmouseout="ocultar('zombie');parar('zombieHabla')"></div>
+    </div>
+</body>
+</html>
